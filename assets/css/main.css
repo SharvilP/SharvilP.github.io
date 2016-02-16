@@ -469,6 +469,11 @@
 
 /* List */
 
+	ul.iconList li{
+		width: auto;
+		float: left;
+	}
+
 	ol {
 		list-style: decimal;
 		margin: 0 0 1.5em 0;
