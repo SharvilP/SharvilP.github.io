@@ -472,6 +472,7 @@
 	ul.iconList li{
 		width: auto;
 		float: left;
+		list-style:none;
 	}
 
 	ol {
