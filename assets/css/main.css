@@ -474,6 +474,12 @@
 		float: left;
 		list-style:none;
 	}
+	
+	ul.email li{
+		width: auto;
+		float: left;
+		list-style:none;
+	}
 
 	ol {
 		list-style: decimal;
