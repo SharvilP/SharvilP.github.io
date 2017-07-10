@@ -103,6 +103,10 @@ h6 {
   transition:all 0.5s;
 }
 
+.card-title {
+  font-size: 25px;
+}
+
 
 #flex-image{
   margin-top: 80px;
@@ -191,6 +195,10 @@ h6 {
 
 .close:hover {
   color: white;
+}
+
+.modal {
+  width: 100%;
 }
 
 .modal-header {

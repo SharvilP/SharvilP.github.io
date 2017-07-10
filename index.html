@@ -39,7 +39,7 @@
           <h1 class="title-super text-thin">Sharvil Parekh</h1>
         </div>
         <div id="aboutMe">
-          <p> Hi! I'm Sharvil!</p>
+          <p>Hi! I'm Sharvil!</p>
           <p>
             I'm currently a sophomore at the University of Maryland,
             College Park. I'm a Computer Science major and I plan to graduate
@@ -47,8 +47,8 @@
           </p>
           <p>
             During the school year, I work on personal projects, help out
-            Maryland Masti with their tech, and chill in a hammock on
-            McKeldin Mall.
+            <a class="text-muted" href="http://marylandmasti.com/">Maryland 
+            Masti</a> with their tech, and chill in a hammock on McKeldin Mall.
           </p>
           <p>
             During the summer, I am a Software Engineering intern currently
@@ -69,7 +69,7 @@
         <div class="card">
           <img class="card-img-top img-fluid" src="images/phillipsiot.png" alt="Card image cap">
           <div class="card-block">
-            <h4 class="card-title">Phillips IoT</h4>
+            <p class="card-title">Phillips IoT</p>
             <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
           </div>
           <div class="card-footer">
@@ -77,13 +77,13 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top img-fluid" src="images/phillipsiot.png" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="images/terrapinnav.png" alt="Card image cap">
           <div class="card-block">
-            <h4 class="card-title">Phillips IoT</h4>
-            <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
+            <p class="card-title">Terrapin Nav</p>
+            <p>An Alexa Skill to help you navigate the University of Maryland</p>
           </div>
           <div class="card-footer">
-            <a class="text-muted" data-toggle="modal" data-target="#phillipsiotModal">More info</a>
+            <a class="text-muted" data-toggle="modal" data-target="#terrapinnavModal">More info</a>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
         <div class="card">
           <img class="card-img-top img-fluid" src="images/phillipsiot.png" alt="Card image cap">
           <div class="card-block">
-            <h4 class="card-title">Phillips IoT</h4>
+            <p class="card-title">Phillips IoT</p>
             <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
           </div>
           <div class="card-footer">
@@ -101,7 +101,7 @@
         <div class="card">
           <img class="card-img-top img-fluid" src="images/phillipsiot.png" alt="Card image cap">
           <div class="card-block">
-            <h4 class="card-title">Phillips IoT</h4>
+            <p class="card-title">Phillips IoT</p>
             <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
           </div>
           <div class="card-footer">
@@ -131,32 +131,76 @@
               <p>
                 In my second semester of freshman year, I got to be a part of a
                 research stream called Phillips Virtual Culture. In it, we were
-                tasked to take the Phillips Collection art museum in Washington 
-                D.C. and see how we could use technology to improve the museum 
+                tasked to take the Phillips Collection art museum in Washington
+                D.C. and see how we could use technology to improve the museum
                 experience.
               </p>
               <p>
-                My project focussed on improving one of the tedious tasks the 
-                museum had to perform, monitoring the humidity and temperature 
+                My project focussed on improving one of the tedious tasks the
+                museum had to perform, monitoring the humidity and temperature
                 in each exhibit room.
               </p>
               <p>
-                The IoT device consisted of a Raspberry Pi Zero, which had a 
-                temperature/humidity sensor attatched to it. The Pi would 
-                communicate the data recorded by the sensor to Adafruit's IoT 
+                The IoT device consisted of a Raspberry Pi Zero, which had a
+                temperature/humidity sensor attatched to it. The Pi would
+                communicate the data recorded by the sensor to Adafruit's IoT
                 platform.
               </p>
               <p>
                 The dashboard was made using Node.JS and Semantic UI. The front
                 end was using Socket.IO for real time data updates from the IoT
-                device. The backend was subscribed to Adafruit's IoT platform 
-                and broadcasted data to all connected clients whenever new data 
+                device. The backend was subscribed to Adafruit's IoT platform
+                and broadcasted data to all connected clients whenever new data
                 came in.
               </p>
             </div>
             <div class="modal-footer">
               <a class="text-muted" href="http://phillipsiot.herokuapp.com/">Check it out</a>
               <a class="text-muted" style="float: right;"  href="https://github.com/SharvilP/PhillipsIoT">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="terrapinnavModal" tabindex="-1" role="dialog" aria-labelledby="terrapinnavLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p class="modal-title" id="myModalLabel">Terrapin Nav</p>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="images/terrapinnav2.png" alt="Terrapin Nav Image">
+              <p>
+                As my internship was winding down, the summer before my freshman
+                year, I had some free time to learn something on my own. I took 
+                this time, to teach myself how to develop Amazon Alexa Skills. 
+                Coincidentally, at that time, Amazon was running a contest to 
+                give away Alexa devices if you got an app published in their 
+                Skills store. I decided to develop a skill that would help me 
+                in this upcoming school, year so I came up with Terrapin Nav. 
+                I got it published in the Skills store and was gifted an Amazon
+                Tap which got a lot of use my first year at UMD!
+              </p>
+              <p>
+                Terrapin Nav allows you to ask how long it would take to walk 
+                between any two buildings on UMD's campus. I thought this would
+                be very helpful for the begining of the year as students would 
+                not know what would be the optimal time to leave for class. 
+                A quick shout to Terrapin Nav would return exactly how long the 
+                walk would take.
+              </p>
+              <p>
+                The skill works by using <a class="text-muted" 
+                href="http://umd.io/">UMD's student run api</a>. This allowed 
+                me to get every building's exact latitude and longitude. From 
+                there, I fed the two sets of coordinates into Google's 
+                Geomatrix API, which spit it out navigation information between 
+                those two points, which I returned back to the user.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="text-muted" href="https://www.amazon.com/Sharvil-Parekh-Terrapin-Nav/dp/B01KM81OLI">Check it out</a>
+              <a class="text-muted" style="float: right;"  href="https://github.com/SharvilP/Amazon-Alexa-Skills/blob/master/TerpNav/main.py">View on GitHub</a>
             </div>
           </div>
         </div>
