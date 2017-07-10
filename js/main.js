@@ -1,9 +1,9 @@
 function changeToHammock() {
-    $("#profileImg").attr('src', 'images/hammock.png');
+    $("#profileImg").attr('src', 'images/hammock.jpg');
 }
 
 function changeToHike() {
-    $("#profileImg").attr('src', 'images/hiking.png');
+    $("#profileImg").attr('src', 'images/hiking.jpg');
 }
 
 function changeToNormal() {
