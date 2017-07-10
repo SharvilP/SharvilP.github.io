@@ -103,7 +103,7 @@ span {
 }
 
 .card-title {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 
@@ -141,18 +141,13 @@ span {
   font-weight: 100;
 }
 
+.text-highlighted {
+  color: #D37300 !important;
+}
+
 .title-super {
-  font-size: 60px;
+  font-size: 3.75em;
   margin: 0 0 0 40px;
-}
-
-.title-logo {
-  margin-top: 20px;
-}
-
-.mainTitle {
-  min-height: 100px;
-  padding-top: 75px;
 }
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -166,7 +161,7 @@ body {
 
 #projects {
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5em;
   color: #FFF;
 }
 
@@ -185,11 +180,10 @@ body {
   color: white;
 }
 
-
 .modal-header {
   display: inline;
   text-align: center;
-  font-size: 30px;
+  font-size: 2em;
   border-bottom-color: #FF8C00;
   border-bottom-style: solid;
 }
