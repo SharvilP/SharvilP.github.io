@@ -1,55 +1,169 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Sharvil Parekh</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Sharvil Parekh</h1>
-							<p>B.S. Computer Science UMD Class of 2020</p>
-						</header>
-						
-						<footer>
-							<ul class="iconList">
-								<li><a href="Sharvil_Parekh_Resume.pdf"><img src="https://cdn1.iconfinder.com/data/icons/ui-5/502/file-128.png"></a></li>
-								<li><a href="https://github.com/SharvilP"><img src="http://cdn.mysitemyway.com/icons-watermarks/simple-black/social-media/social-media_github/social-media_github_simple-black_128x128.png"></a></li>
-								<li><a href="https://devpost.com/SharvilP"><img src="https://a.disquscdn.com/uploads/forums/70/1912/favicon.png"></a></li>
-							</ul>
-							
-						</footer>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul style="list-style: none;">
-								<li> <span>Email: </span> <a href="mailto:Sharvilp@terpmail.umd.edu" target="_top">Sharvilp@terpmail.umd.edu</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
-</html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sharvil Parekh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <link href="css/bootstrap_mod.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="flex-container" style="margin-bottom:-30px margin-left:10px">
+        <ul>
+          <li>
+            <a class="flex-button navbar-tab" href="Sharvil_Parekh_resume.pdf">Resume</a>
+          </li>
+          <li>
+            <a class="flex-button navbar-tab" href="#projectsHeader">Projects</a>
+          </li>
+          <li>
+            <a class="flex-button navbar-tab" href="https://github.com/sharvilp">Github</a>
+          </li>
+          <li>
+            <a class="flex-button navbar-tab" href="https://github.com/snaik27">Devpost</a>
+          </li>
+          <li>
+            <a class="flex-button navbar-tab" href="linkedin.com/in/sharvil-parekh-280751142">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Basic info -->
+      <div class="flex-container basic-info">
+        <div id="flex-image">
+          <img id="profileImg" src="images/profile.jpg">
+          <h1 class="title-super text-thin">Sharvil Parekh</h1>
+        </div>
+        <div id="aboutMe">
+          <p> Hi! I'm Sharvil!</p>
+          <p>
+            I'm currently a sophomore at the University of Maryland,
+            College Park. I'm a Computer Science major and I plan to graduate
+            in spring 2019.
+          </p>
+          <p>
+            During the school year, I work on personal projects, help out
+            Maryland Masti with their tech, and chill in a hammock on
+            McKeldin Mall.
+          </p>
+          <p>
+            During the summer, I am a Software Engineering intern currently
+            at Whisker Labs (previously at WeatherBug) and hike with my
+            friends on the weekends.
+          </p>
+        </div>
+      </div>
+      <div>
+        <hr>
+      </div>
+      
+      <!-- Project Cards -->
+      <div id="projectsHeader">
+        <p>Projects</p>
+      </div>
+      <div class="flex-container">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/phillipsiot.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Phillips IoT</h4>
+            <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
+          </div>
+          <div class="card-footer">
+            <a class="text-muted" data-toggle="modal" data-target="#phillipsiotModal">More info</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/phillipsiot.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Phillips IoT</h4>
+            <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
+          </div>
+          <div class="card-footer">
+            <a class="text-muted"  href="https://github.com/SharvilP/PhillipsIoT">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/phillipsiot.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Phillips IoT</h4>
+            <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
+          </div>
+          <div class="card-footer">
+            <a class="text-muted"  href="https://github.com/snaik27/Blender-Projects/tree/master/MyRoom">View on GitHub</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/phillipsiot.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Phillips IoT</h4>
+            <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
+          </div>
+          <div class="card-footer">
+            <a class="text-muted"  href="https://github.com/snaik27/Blender-Projects/tree/master/MyRoom">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hr and back to top -->
+    <div>
+      <hr>
+    </div>
+    <div id="top" class="flex-container">
+      <p id="message">Back to top</p>
+    </div>
+    <!-- Project Modals -->
+    <div class="project-modals">
+      <div class="modal fade" id="phillipsiotModal" tabindex="-1" role="dialog" aria-labelledby="phillipsiotLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p class="modal-title" id="myModalLabel">PhillipsIoT</p>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="images/phillipsiot2.png" alt="Phillips IoT Image">
+              <p>
+                In my second semester of freshman year, I got to be a part of a
+                research stream called Phillips Virtual Culture. In it, we were
+                tasked to take the Phillips Collection art museum in Washington 
+                D.C. and see how we could use technology to improve the museum 
+                experience.
+              </p>
+              <p>
+                My project focussed on improving one of the tedious tasks the 
+                museum had to perform, monitoring the humidity and temperature 
+                in each exhibit room.
+              </p>
+              <p>
+                The IoT device consisted of a Raspberry Pi Zero, which had a 
+                temperature/humidity sensor attatched to it. The Pi would 
+                communicate the data recorded by the sensor to Adafruit's IoT 
+                platform.
+              </p>
+              <p>
+                The dashboard was made using Node.JS and Semantic UI. The front
+                end was using Socket.IO for real time data updates from the IoT
+                device. The backend was subscribed to Adafruit's IoT platform 
+                and broadcasted data to all connected clients whenever new data 
+                came in.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="text-muted" href="http://phillipsiot.herokuapp.com/">Check it out</a>
+              <a class="text-muted" style="float: right;"  href="https://github.com/SharvilP/PhillipsIoT">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>

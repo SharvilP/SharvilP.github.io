@@ -1,0 +1,212 @@
+/** {
+   outline: 1px solid red !important;
+}*/
+body {/*targets the whole html body*/
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+hr {
+  border: none;
+  height: 3px;
+  width: 70%;
+  background-color: #7F4200;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
+
+li {
+  float:left;
+  margin:0 10px 0 0;
+}
+
+li a {
+  display:flex;
+  text-align:center;
+  padding:10px 15px 10px 15px;
+  text-decoration:none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px;
+}
+
+
+@media (min-width: 576px){
+  .flex-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top:10px;
+    justify-content: center;
+  }
+
+  .flex-container .basic-info{
+    display: inline-block;
+    max-width: 80%;
+    max-height: auto;
+  }
+}
+
+@media (min-width: 720px){
+  .card{
+    max-width: 45%;
+  }
+}
+@media (min-width: 1000px){
+  .card{
+    max-width: 45%;
+  }
+}
+
+.flex-button{
+  background-color: #2B2B2B;
+  margin: 0 10px 10px 15px;
+  padding-top:10px;
+  border-width: 0 0 2px 0;
+  border-bottom-color: #FF8C00;
+  border-bottom-style: solid;
+  border-radius: 0.25rem;
+}
+
+.flex-button:hover{
+  border-bottom-color: #FFAA44;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition:all 0.3s;
+  text-decoration:none;
+  background-color: #353634;
+  color: #EEE;
+}
+
+.card:hover{
+  box-shadow: 0 0 50px -3px #7F4200;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition:all 0.5s;
+}
+
+
+#flex-image{
+  margin-top: 80px;
+  justify-content: center;
+}
+
+#profileImg{
+  border-radius: 50%;
+  border-style:solid;
+  border-width: 0 0 4px 0;
+  border-bottom-color: #B05E0D;
+}
+
+.navbar-tab{
+  color:#FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+
+#focuses{
+  color: #FF8C00;
+  font-weight: 400;
+  font-size: 1.4em;
+  padding-top:60px;
+  padding-bottom: 30px;
+  margin-top:40px;
+}
+
+.text-muted{
+  color: #AAA !important;
+}
+
+.text-muted:hover{
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition:all 0.3s;
+  text-decoration:none;
+  color: #EEE !important;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.title-super {
+  font-size: 60px;
+  margin: 0 0 0 40px;
+}
+
+.title-logo {
+  margin-top: 20px;
+}
+
+.mainTitle {
+  min-height: 100px;
+  padding-top: 75px;
+}
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.container {
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration: 1s;
+    animation-delay: .25s
+}
+
+#projectsHeader {
+  text-align: center;
+  font-size: 40px;
+  color: #FFF;
+}
+
+#aboutMe {
+  margin-top:auto;
+  margin-left: 15px;
+  line-height: 150%;
+  font-size: 1.1em;
+}
+
+.close {
+  color: white;
+}
+
+.close:hover {
+  color: white;
+}
+
+.modal-header {
+  display: inline;
+  text-align: center;
+  font-size: 30px;
+  border-bottom-color: #FF8C00;
+  border-bottom-style: solid;
+}
+
+.modal-footer {
+  display: inline;
+  border-top-color: #FF8C00;
+  border-top-style: solid;
+}
+
+.modal-content {
+  background-color: #2b2b2b;
+}
