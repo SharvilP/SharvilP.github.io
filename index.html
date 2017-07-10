@@ -19,7 +19,7 @@
             <a class="flex-button navbar-tab" href="Sharvil_Parekh_Resume.pdf">Resume</a>
           </li>
           <li>
-            <a class="flex-button navbar-tab" href="#projectsHeader">Projects</a>
+            <a class="flex-button navbar-tab" href="#projects">Projects</a>
           </li>
           <li>
             <a class="flex-button navbar-tab" href="https://github.com/sharvilp">Github</a>
@@ -39,7 +39,8 @@
           <h1 class="title-super text-thin">Sharvil Parekh</h1>
         </div>
         <div id="aboutMe">
-          <p>Hi! I'm Sharvil!</p>
+          <p>Hi! I'm <span class="text-muted" onclick="changeToNormal()" 
+          >Sharvil</span>!</p>
           <p>
             I'm currently a sophomore at the University of Maryland,
             College Park. I'm a Computer Science major and I plan to graduate
@@ -47,12 +48,16 @@
           </p>
           <p>
             During the school year, I work on personal projects, help out
-            <a class="text-muted" href="http://marylandmasti.com/">Maryland 
-            Masti</a> with their tech, and chill in a hammock on McKeldin Mall.
+            <a class="text-muted" href="http://marylandmasti.com/">Maryland
+            Masti</a> with their tech, and chill in a <span class="text-muted" 
+            onclick="changeToHammock()" >hammock</span> on McKeldin Mall.
           </p>
           <p>
-            During the summer, I am a Software Engineering intern currently
-            at Whisker Labs (previously at WeatherBug) and hike with my
+            During the summer, I am a Software Engineering intern at <a 
+            class="text-muted "href="https://www.whiskerlabs.com/">Whisker 
+            Labs</a> (previously at <a class="text-muted" 
+            href="http://weather.weatherbug.com/">WeatherBug</a>) and <span 
+            class="text-muted" onclick="changeToHike()" >hike</span> with my 
             friends on the weekends.
           </p>
         </div>
@@ -62,7 +67,7 @@
       </div>
       
       <!-- Project Cards -->
-      <div id="projectsHeader">
+      <div id="projects">
         <p>Projects</p>
       </div>
       <div class="flex-container">
@@ -77,6 +82,18 @@
           </div>
         </div>
         <div class="card">
+          <img class="card-img-top img-fluid" src="images/cardr.png" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-title">Cardr</p>
+            <p>An E-Wallet for your business cards</p>
+          </div>
+          <div class="card-footer">
+            <a class="text-muted" data-toggle="modal" data-target="#cardrModal">More info</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="card">
           <img class="card-img-top img-fluid" src="images/terrapinnav.png" alt="Card image cap">
           <div class="card-block">
             <p class="card-title">Terrapin Nav</p>
@@ -84,18 +101,6 @@
           </div>
           <div class="card-footer">
             <a class="text-muted" data-toggle="modal" data-target="#terrapinnavModal">More info</a>
-          </div>
-        </div>
-      </div>
-      <div class="flex-container">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/phillipsiot.png" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-title">Phillips IoT</p>
-            <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted" data-toggle="modal" data-target="#phillipsiotModal">More info</a>
           </div>
         </div>
         <div class="card">
@@ -127,7 +132,7 @@
               <p class="modal-title" id="myModalLabel">PhillipsIoT</p>
             </div>
             <div class="modal-body">
-              <img class="img-fluid" src="images/phillipsiot2.png" alt="Phillips IoT Image">
+              <img class="modal-image img-fluid" src="images/phillipsiot2.png" alt="Phillips IoT Image">
               <p>
                 In my second semester of freshman year, I got to be a part of a
                 research stream called Phillips Virtual Culture. In it, we were
@@ -161,6 +166,43 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="cardrModal" tabindex="-1" role="dialog" aria-labelledby="cardrLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p class="modal-title" id="myModalLabel">Cardr</p>
+            </div>
+            <div class="modal-body">
+              <img class="modal-image img-fluid" src="images/cardr2.png" alt="Cardr Image">
+              <p>
+                At Bitcamp 2017, my team and I created Cardr. Cardr is an online
+                e-wallet for your business cards. Its goal is to minimize the
+                amount of cards you have to carry around, but keeps all of your
+                business cards, only a few clicks away.
+              </p>
+              <p>
+                When you recieve a business card, you open up Cardr and snap a
+                picture of it. Cardr uses Google CV to analyze the card and
+                retrieve all essential information from it such as phone numbers,
+                email addresses, and names. After it has gathered all of the
+                information it can from the card, it creates a virtual business
+                card that stores all of that information.
+              </p>
+              <p>
+                Cardr also helps you organize your cards by linking them to
+                specific events and lets you search for cards based on those
+                events. Another way to query info is to use our companion Alexa
+                skill, which you can query for either the phone number or email
+                address of an individual, from their name or company.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="text-muted" href="https://devpost.com/software/cardr">Check it out</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="modal fade" id="terrapinnavModal" tabindex="-1" role="dialog" aria-labelledby="terrapinnavLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -169,26 +211,26 @@
               <p class="modal-title" id="myModalLabel">Terrapin Nav</p>
             </div>
             <div class="modal-body">
-              <img class="img-fluid" src="images/terrapinnav2.png" alt="Terrapin Nav Image">
+              <img class="modal-image img-fluid" src="images/terrapinnav2.png" alt="Terrapin Nav Image">
               <p>
                 As my internship was winding down, the summer before my freshman
-                year, I had some free time to learn something on my own. I took 
+                year, I had some free time to learn something on my own. I took
                 this time, to teach myself how to develop Amazon Alexa Skills.
               </p>
               <p>
-                Terrapin Nav allows you to ask how long it would take to walk 
+                Terrapin Nav allows you to ask how long it would take to walk
                 between any two buildings on UMD's campus. I thought this would
-                be very helpful for the begining of the year as students would 
-                not know what would be the optimal time to leave for class. 
-                A quick shout to Terrapin Nav would return exactly how long the 
+                be very helpful for the begining of the year as students would
+                not know what would be the optimal time to leave for class.
+                A quick shout to Terrapin Nav would return exactly how long the
                 walk would take.
               </p>
               <p>
-                The skill works by using <a class="text-muted" 
-                href="http://umd.io/">UMD's student run api</a>. This allowed 
-                me to get every building's exact latitude and longitude. From 
-                there, I fed the two sets of coordinates into Google's 
-                Geomatrix API, which spit it out navigation information between 
+                The skill works by using <a class="text-muted"
+                href="http://umd.io/">UMD's student run api</a>. This allowed
+                me to get every building's exact latitude and longitude. From
+                there, I fed the two sets of coordinates into Google's
+                Geomatrix API, which spit it out navigation information between
                 those two points, which I returned back to the user.
               </p>
             </div>

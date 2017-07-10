@@ -47,6 +47,9 @@ h6 {
   margin: 10px;
 }
 
+span {
+  cursor: pointer;
+}
 
 @media (min-width: 576px){
   .flex-container{
@@ -144,7 +147,7 @@ h6 {
   -o-transition: all 0.3s;
   transition:all 0.3s;
   text-decoration:none;
-  color: #EEE !important;
+  color: #FFF !important;
 }
 
 .text-thin {
@@ -176,7 +179,7 @@ h6 {
     animation-delay: .25s
 }
 
-#projectsHeader {
+#projects {
   text-align: center;
   font-size: 40px;
   color: #FFF;
@@ -197,9 +200,6 @@ h6 {
   color: white;
 }
 
-.modal {
-  width: 100%;
-}
 
 .modal-header {
   display: inline;
@@ -217,4 +217,8 @@ h6 {
 
 .modal-content {
   background-color: #2b2b2b;
+}
+
+.modal-image {
+  margin-bottom: 20px;
 }
