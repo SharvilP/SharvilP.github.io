@@ -8,7 +8,6 @@
     <link href="css/bootstrap_mod.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    
   </head>
   <body>
     <div class="container">
@@ -61,10 +60,10 @@
           </p>
         </div>
       </div>
+      <!-- Mid HR -->
       <div>
         <hr>
       </div>
-      
       <!-- Project Cards -->
       <div id="projects">
         <p>Projects</p>
@@ -103,13 +102,13 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top img-fluid" src="images/phillipsiot.jpg" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="images/ezpill.jpg" alt="Card image cap">
           <div class="card-block">
-            <p class="card-title">Phillips IoT</p>
+            <p class="card-title">EzPill</p>
             <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
           </div>
           <div class="card-footer">
-            <span class="text-muted" data-toggle="modal" data-target="#phillipsiotModal">More info</span>
+            <span class="text-muted" data-toggle="modal" data-target="#ezpillModal">More info</span>
           </div>
         </div>
       </div>
@@ -211,6 +210,44 @@
             </div>
             <div class="modal-body">
               <img class="modal-image img-fluid" src="images/terrapinnav2.jpg" alt="Terrapin Nav Image">
+              <p>
+                As my internship was winding down, the summer before my freshman
+                year, I had some free time to learn something on my own. I took
+                this time, to teach myself how to develop Amazon Alexa Skills.
+              </p>
+              <p>
+                Terrapin Nav allows you to ask how long it would take to walk
+                between any two buildings on UMD's campus. I thought this would
+                be very helpful for the begining of the year as students would
+                not know what would be the optimal time to leave for class.
+                A quick shout to Terrapin Nav would return exactly how long the
+                walk would take.
+              </p>
+              <p>
+                The skill works by using <a class="text-muted"
+                href="http://umd.io/">UMD's student run api</a>. This allowed
+                me to get every building's exact latitude and longitude. From
+                there, I fed the two sets of coordinates into Google's
+                Geomatrix API, which spit it out navigation information between
+                those two points, which I returned back to the user.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="text-muted" href="https://www.amazon.com/Sharvil-Parekh-Terrapin-Nav/dp/B01KM81OLI">Check it out</a>
+              <a class="text-muted" style="float: right;"  href="https://github.com/SharvilP/Amazon-Alexa-Skills/blob/master/TerpNav/main.py">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="ezpillModal" tabindex="-1" role="dialog" aria-labelledby="ezpillLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p class="modal-title" id="myModalLabel">EzPill</p>
+            </div>
+            <div class="modal-body">
+              <img class="modal-image img-fluid" src="images/ezpill2.jpg" alt="EzPill Image">
               <p>
                 As my internship was winding down, the summer before my freshman
                 year, I had some free time to learn something on my own. I took
