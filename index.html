@@ -113,6 +113,30 @@
           </div>
         </div>
       </div>
+      <div class="flex-container">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/fireberrypi.jpg" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-title">Fireberry Pi</p>
+            <p>A smart smoke and gas detector</p>
+          </div>
+          <div class="card-footer">
+            <span class="text-muted" data-toggle="modal" data-target="#fireberrypiModal">More info</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/lotsofholes.jpg" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-title">Lots of Holes</p>
+            <p>Crowdsourced mapping of potholes</p>
+          </div>
+          <div class="card-footer">
+            <span class="text-muted" data-toggle="modal" data-target="#lotsofholesModal">More info</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     </div>
     <!-- Hr and back to top -->
     <div>
@@ -140,13 +164,13 @@
                 experience.
               </p>
               <p>
-                My project focussed on improving one of the tedious tasks the
+                My project focused on improving one of the tedious tasks the
                 museum had to perform, monitoring the humidity and temperature
                 in each exhibit room.
               </p>
               <p>
                 The IoT device consisted of a Raspberry Pi Zero, which had a
-                temperature/humidity sensor attatched to it. The Pi would
+                temperature/humidity sensor attached to it. The Pi would
                 communicate the data recorded by the sensor to Adafruit's IoT
                 platform.
               </p>
@@ -177,11 +201,11 @@
               <p>
                 At Bitcamp 2017, my team and I created Cardr. Cardr is an online
                 e-wallet for your business cards. Its goal is to minimize the
-                amount of cards you have to carry around, but keeps all of your
+                number of cards you have to carry around, but keeps all of your
                 business cards, only a few clicks away.
               </p>
               <p>
-                When you recieve a business card, you open up Cardr and snap a
+                When you receive a business card, you open up Cardr and snap a
                 picture of it. Cardr uses Google CV to analyze the card and
                 retrieve all essential information from it such as phone numbers,
                 email addresses, and names. After it has gathered all of the
@@ -219,7 +243,7 @@
               <p>
                 Terrapin Nav allows you to ask how long it would take to walk
                 between any two buildings on UMD's campus. I thought this would
-                be very helpful for the begining of the year as students would
+                be very helpful for the beginning of the year as students would
                 not know what would be the optimal time to leave for class.
                 A quick shout to Terrapin Nav would return exactly how long the
                 walk would take.
@@ -269,7 +293,7 @@
                 prescription info into a calendar in our app. Next, you would be 
                 prompted to select a time at which you want to EzPill to dispense
                 your pills. When it came time to take your pills, it would dispense
-                the correct dosage and shoot you a text messsage you to remind
+                the correct dosage and shoot you a text message you to remind
                 you to take your medicine.
               </p>
               <p>
@@ -278,13 +302,85 @@
                 that you could glance at if you were out shopping and didn't know
                 if you needed a refill. To build EzPill, we utilized a lot of 
                 materials we found at Prime. We used cardboard, 3D printed parts,
-                PVC, and servos for the physcial device. The device was powered 
+                PVC, and servos for the physical device. The device was powered 
                 by a raspberry pi which synced with the web app and android app 
                 using Twilio's Sync platform. 
               </p>
             </div>
             <div class="modal-footer">
               <a class="text-muted" target="_blank" href="https://devpost.com/software/ezpill">Check it out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="fireberrypiModal" tabindex="-1" role="dialog" aria-labelledby="fireberrypiLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p class="modal-title" id="myModalLabel">Fireberry Pi</p>
+            </div>
+            <div class="modal-body">
+              <img class="modal-image img-fluid" src="images/fireberrypi2.jpg" alt="Fireberry Pi Image">
+              <p>
+                At Bitcamp 2016, my team and I created Fireberry Pi - A smart 
+                smoke and gas detector. The idea spawned from the statistic that
+                over 500 deaths occur from gas leaks in homes every year and a
+                time when a smoke detector went off in my home, but no one was 
+                there to respond. 
+              </p>
+              <p>
+                Fireberry Pi fixes this issue by alerting all family members of 
+                smoke or gas leak through a text message or alert in our companion
+                Android app. You would also receive a picture of the room with 
+                the text message so you can evaluate the situation on your own.
+              </p>
+              <p>
+                The project was built with a Raspberry Pi 3 and an Arduino Uno. 
+                The Uno was used as a micro controller which managed the input 
+                from our gas/smoke sensor. The Rasperry Pi is what connects all 
+                of our hardware to the web and Android app.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="text-muted" target="_blank" href="https://devpost.com/software/fireberry-pi">Check it out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="lotsofholesModal" tabindex="-1" role="dialog" aria-labelledby="lotsofholesLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p class="modal-title" id="myModalLabel">Lots of Holes</p>
+            </div>
+            <div class="modal-body">
+              <img class="modal-image img-fluid" src="images/lotsofholes2.jpg" alt="Lots of Holes Image">
+              <p>
+                On the way to HackUMBC 2016, my team and I went over a lot of 
+                potholes. We were annoyed but didn't think much of them. Once
+                we got to the hackathon however, we decided to look into the 
+                process of reporting potholes. We found out that in order for 
+                the county to fix potholes, the public had to call in and report 
+                them. We thought this was too much effort so we came up with 
+                Lots of Holes.
+              </p>
+              <p>
+                Lots of holes is an Android app that you let run in the background
+                while you drive. Once the app detects you go over a pothole 
+                (Measurements from the accelerometer are monitored), a GPS flare
+                is emitted to a Firebase DB. The DB then maps to a google maps 
+                layer that can be shared with the county.
+              </p>
+              <p>
+                The app works through crowdsourcing as the more people that 
+                report a pothole, the higher priority the pothole gets assigned.
+                This is also used to help remove anomalies. 
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="text-muted" target="_blank" href="https://devpost.com/software/lots-of-holes">Check it out</a>
             </div>
           </div>
         </div>
