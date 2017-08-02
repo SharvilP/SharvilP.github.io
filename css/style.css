@@ -96,7 +96,7 @@ span {
 }
 
 .card:hover{
-  box-shadow: 0 0 50px -3px #7F4200;
+  box-shadow: 0 0 60px -3px #FF8C00;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition:all 0.5s;
