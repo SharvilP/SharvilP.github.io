@@ -71,6 +71,16 @@
       </div>
       <div class="flex-container">
         <div class="card">
+          <img class="card-img-top img-fluid" src="images/terplaundry.jpg" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-title">Terp Laundry</p>
+            <p>An easy way for UMD students to check the status of the laundry room in their dorm</p>
+          </div>
+          <div class="card-footer">
+            <span class="text-muted" data-toggle="modal" data-target="#terplaundryModal">More info</span>
+          </div>
+        </div>
+        <div class="card">
           <img class="card-img-top img-fluid" src="images/phillipsiot.jpg" alt="Card image cap">
           <div class="card-block">
             <p class="card-title">Phillips IoT</p>
@@ -78,6 +88,18 @@
           </div>
           <div class="card-footer">
             <span class="text-muted" data-toggle="modal" data-target="#phillipsiotModal">More info</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/galileo.jpg" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-title">Galileo</p>
+            <p>A web app for students to create their perfect schedule</p>
+          </div>
+          <div class="card-footer">
+            <span class="text-muted" data-toggle="modal" data-target="#galileoModal">More info</span>
           </div>
         </div>
         <div class="card">
@@ -381,6 +403,70 @@
             </div>
             <div class="modal-footer">
               <a class="text-muted" target="_blank" href="https://devpost.com/software/lots-of-holes">Check it out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="terplaundryModal" tabindex="-1" role="dialog" aria-labelledby="terplaundryLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p class="modal-title" id="myModalLabel">Terp Laundry</p>
+            </div>
+            <div class="modal-body">
+              <img class="modal-image img-fluid" src="images/terplaundry2.jpg" alt="Terp Laundry Image">
+              <p>
+                Terp Laundry is an Alexa skill that allows UMD students to check
+                the status of washers and dryersin their dorm. I came up with the
+                idea when a friend of mine complained that they had gone downstairs
+                to the laundry room with their clothes, only to come back up after
+                seeing that all the washers were currently in use.
+              </p>
+              <p>
+                The skill works with any dorm at UMD, even with dorms that have
+                multiple laundry rooms. It currently uses Selenium running
+                PhantomJS as a headless browser to authenticate with UMD
+                and scrape the laundry room stats from their website. I am
+                currently talking with UMD to get access directly to the API
+                that provides information about the Laundry Machines on campus. 
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="text-muted" target="_blank" href="https://www.amazon.com/dp/B074JK6M8Y">Check it out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="galileoModal" tabindex="-1" role="dialog" aria-labelledby="galileoLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p class="modal-title" id="myModalLabel">Galileo</p>
+            </div>
+            <div class="modal-body">
+              <img class="modal-image img-fluid" src="images/galileo2.jpg" alt="Galileo Image">
+              <p>
+                Daemon Dash 2016 my team and I developed Galileo. Galileo is a
+                schedule builder aimed at replacing Venus, our very old and
+                clunky schedule generator, provided by UMD. Venus allows for
+                no customization, preferences, or requests and spits out randomly
+                generated permutations of the classes you want to sign up for.
+              </p>
+              <p>
+                We wanted to make the schedule generator smarter and cater more
+                towards the students needs so we wrote our own version that includes
+                filters and preferences. For example, students would be able to specify
+                their dorms and get back a schedule that would be the most optimal in
+                terms of walking.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="text-muted" target="_blank" href="https://hackstreetboys-galileo.herokuapp.com/">Check it out</a>
+              <a class="text-muted" style="float: right;"  target="_blank" href="https://github.com/rachitag22/galileo">View on GitHub</a>
             </div>
           </div>
         </div>
