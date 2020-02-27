@@ -1,481 +1,153 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sharvil Parekh</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
-    <link href="css/bootstrap_mod.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <!-- Navbar -->
-      <div class="flex-container" style="margin-bottom:-30px margin-left:10px">
-        <ul>
-          <li>
-            <a class="flex-button navbar-tab" target="_blank" href="Sharvil_Parekh_Resume.pdf">Resume</a>
-          </li>
-          <li>
-            <a class="flex-button navbar-tab" href="#projects">Projects</a>
-          </li>
-          <li>
-            <a class="flex-button navbar-tab" target="_blank" href="https://github.com/sharvilp">Github</a>
-          </li>
-          <li>
-            <a class="flex-button navbar-tab" target="_blank" href="https://devpost.com/SharvilP">Devpost</a>
-          </li>
-          <li>
-            <a class="flex-button navbar-tab" target="_blank" href="https://linkedin.com/in/sharvilp6">Linkedin</a>
-          </li>
-        </ul>
+   <head>
+      <title>Sharvil Parekh</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <meta description="Personal portfolio website">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+   </head>
+   <body>
+      <div class="ui middle aligned center aligned grid">
+         <div class="row">
+            <div class="column">
+               <div class="ui container raised grey card">
+                  <div class="image">
+                     <img id="profileImg" src="public/profile.jpg">
+                  </div>
+                  <div class="content ">
+                     <div id='name' class="header">Sharvil Parekh</div>
+                     <div class="meta">
+                        <div id='school' style="display: inline-flex;">
+                           <div id="year">University of Maryland '19</div>
+                           <div id="terp">🐢</div>
+                        </div>
+                        <div id='degree'>Computer Science, Minor in Technology Entrepreneurship</div>
+                     </div>
+                  </div>
+                  <div class="content float left">
+                     <div class="ui small feed">
+                        <div class="event">
+                           <div class="content">
+                              <div class="summary">
+                                 <i class="home icon"></i> Summer 2019 Intern @
+                                 <a href="https://nextdoor.com/">Nextdoor</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="event">
+                           <div class="content">
+                              <div class="summary">
+                                 <i class="home icon"></i> Fall 2018 Intern @
+                                 <a href="https://nextdoor.com/">Nextdoor</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="event">
+                           <div class="content">
+                              <div class="summary">
+                                 <i class="amazon icon"></i> Summer 2018 Intern @
+                                 <a href="https://amazon.com/">Amazon</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="event">
+                           <div class="content">
+                              <div class="summary">
+                                 <i class="whiskerlabs home icon"></i> Summer 2017 Intern @
+                                 <a href="https://www.whiskerlabs.com//">Whisker Labs</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="event">
+                           <div class="content">
+                              <div class="summary">
+                                 <i class="earthnetworks globe icon"></i> Summer 2016 Intern @
+                                 <a href="https://www.earthnetworks.com/">Earth Networks</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="extra content mobile hidden">
+                     <div class="ui sub header">Past Positions</div>
+                     <div class="ui small feed">
+                        <div class="event">
+                           <div class="content">
+                              <div class="summary">
+                                 <i class="phichitheta university icon"></i> Alumni Chair @
+                                 <a href="https://www.pctumd.com/">Phi Chi Theta</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="event">
+                           <div class="content">
+                              <div class="summary">
+                                 <i class="bitcamp fire icon"></i> Tech Organizer @
+                                 <a href="https://bit.camp/">Bitcamp</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="event">
+                           <div class="content">
+                              <div class="summary">
+                                 <i class="startupshell user icon"></i> Fellow @
+                                 <a href="https://startupshell.org/">Startup Shell</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="event">
+                           <div class="content">
+                              <div class="summary">
+                                 <i class="black camera icon"></i> Tech Chair @
+                                 <a href="https://marylandmasti.com/">Maryland Masti</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="extra content center aligned">
+                     <div class='ui four column grid'>
+                        <div class="column">
+                           <a target="_blank" href='public/Sharvil_Parekh_Resume.pdf'>
+                           <i class="grey large file pdf outline icon link"></i>
+                           </a>
+                        </div>
+                        <div class="column">
+                           <a href='https://www.youtube.com/channel/UCiiHQRMOtyuVX5ClKiG4JGw'>
+                           <i class="red large youtube icon link"></i>
+                           </a>
+                        </div>
+                        <div class="column">
+                           <a href='https://devpost.com/SharvilP'>
+                           <i class="yellow large trophy icon link"></i>
+                           </a>
+                        </div>
+                        <div class="column">
+                           <a href='https://www.linkedin.com/in/sharvilp6/'>
+                           <i class="blue large linkedin icon link"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <!-- Basic info -->
-      <div class="flex-container basic-info">
-        <div id="flex-image">
-          <img id="profileImg" src="images/profile.jpg">
-          <h1 class="title-super text-thin">Sharvil Parekh</h1>
-        </div>
-        <div id="aboutMe">
-          <p>Hi! I'm <span class="text-highlighted" onclick="changeToNormal()" 
-          >Sharvil</span>!</p>
-          <p>
-            I'm a senior at the University of Maryland, College Park. 
-            I'm a Computer Science major and Tech Entrepreneurship minor and I plan to graduate in Fall 2019.
-          </p>
-          <p>
-            During the school year, I like to work on personal projects, help out
-            <a class="text-highlighted" target="_blank" 
-            href="http://marylandmasti.com/">Maryland Masti</a> with their tech,
-             and chill in a <span class="text-highlighted" 
-            onclick="changeToHammock()" >hammock</span> on McKeldin Mall.
-          </p>
-          <p>
-            This past summer, I was a return SWE intern at <a 
-            class="text-highlighted target="_blank" href="https://nextdoor.com/">Nextdoor </a> (previously at <a 
-            class="text-highlighted target="_blank" href="https://www.amazon.com/">Amazon</a>, <a 
-            class="text-highlighted target="_blank" href="https://www.whiskerlabs.com/">Whisker 
-            Labs</a> and <a class="text-highlighted" target="_blank"
-            href="https://www.earthnetworks.com/">Earth Networks</a>) and I enjoy <span 
-            class="text-highlighted" onclick="changeToHike()" >hiking</span> with my 
-            friends on the weekends.
-          </p>
-        </div>
-      </div>
-      <!-- Mid HR -->
-      <div>
-        <hr>
-      </div>
-      <!-- Project Cards -->
-      <div id="projects">
-        <p>Projects</p>
-      </div>
-      <div class="flex-container">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/terplaundry.jpg" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-title">Terp Laundry</p>
-            <p>An easy way for UMD students to check the status of the laundry room in their dorm</p>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted" data-toggle="modal" data-target="#terplaundryModal">More info</span>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/phillipsiot.jpg" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-title">Phillips IoT</p>
-            <p>An IoT dashboard for the Phillips Collection in Washington D.C.</p>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted" data-toggle="modal" data-target="#phillipsiotModal">More info</span>
-          </div>
-        </div>
-      </div>
-      <div class="flex-container">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/galileo.jpg" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-title">Galileo</p>
-            <p>A web app for students to create their perfect schedule</p>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted" data-toggle="modal" data-target="#galileoModal">More info</span>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/cardr.jpg" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-title">Cardr</p>
-            <p>An E-Wallet for your business cards</p>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted" data-toggle="modal" data-target="#cardrModal">More info</span>
-          </div>
-        </div>
-      </div>
-      <div class="flex-container">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/terrapinnav.jpg" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-title">Terrapin Nav</p>
-            <p>An Alexa Skill to help you navigate the University of Maryland</p>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted" data-toggle="modal" data-target="#terrapinnavModal">More info</span>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/ezpill.jpg" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-title">EzPill</p>
-            <p>An easy way to manage your prescriptions</p>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted" data-toggle="modal" data-target="#ezpillModal">More info</span>
-          </div>
-        </div>
-      </div>
-      <div class="flex-container">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/fireberrypi.jpg" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-title">Fireberry Pi</p>
-            <p>A smart smoke and gas detector</p>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted" data-toggle="modal" data-target="#fireberrypiModal">More info</span>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/lotsofholes.jpg" alt="Card image cap">
-          <div class="card-block">
-            <p class="card-title">Lots of Holes</p>
-            <p>Crowdsourced mapping of potholes</p>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted" data-toggle="modal" data-target="#lotsofholesModal">More info</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    </div>
-    <!-- Hr and back to top -->
-    <div>
-      <hr>
-    </div>
-    <div id="top" class="flex-container">
-      <span id="message">Back to top</span>
-    </div>
-    <!-- Project Modals -->
-    <div class="project-modals">
-      <div class="modal fade" id="phillipsiotModal" tabindex="-1" role="dialog" aria-labelledby="phillipsiotLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <p class="modal-title" id="myModalLabel">PhillipsIoT</p>
-            </div>
-            <div class="modal-body">
-              <img class="modal-image img-fluid" src="images/phillipsiot2.jpg" alt="Phillips IoT Image">
-              <p>
-                In my second semester of freshman year, I got to be a part of a
-                research stream called Phillips Virtual Culture. In it, we were
-                tasked to take the Phillips Collection art museum in Washington
-                D.C. and see how we could use technology to improve the museum
-                experience.
-              </p>
-              <p>
-                My project focused on improving one of the tedious tasks the
-                museum had to perform, monitoring the humidity and temperature
-                in each exhibit room.
-              </p>
-              <p>
-                The IoT device consisted of a Raspberry Pi Zero, which had a
-                temperature/humidity sensor attached to it. The Pi would
-                communicate the data recorded by the sensor to Adafruit's IoT
-                platform.
-              </p>
-              <p>
-                The dashboard was made using Node.JS and Semantic UI. The front
-                end was using Socket.IO for real time data updates from the IoT
-                device. The backend was subscribed to Adafruit's IoT platform
-                and broadcasted data to all connected clients whenever new data
-                came in.
-              </p>
-            </div>
-            <div class="modal-footer">
-              <a class="text-muted" target="_blank" href="http://phillipsiot.herokuapp.com/">Check it out</a>
-              <a class="text-muted" target="_blank" style="float: right;"  href="https://github.com/SharvilP/PhillipsIoT">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="cardrModal" tabindex="-1" role="dialog" aria-labelledby="cardrLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <p class="modal-title" id="myModalLabel">Cardr</p>
-            </div>
-            <div class="modal-body">
-              <img class="modal-image img-fluid" src="images/cardr2.jpg" alt="Cardr Image">
-              <p>
-                At Bitcamp 2017, my team and I created Cardr. Cardr is an online
-                e-wallet for your business cards. Its goal is to minimize the
-                number of cards you have to carry around, but keeps all of your
-                business cards, only a few clicks away.
-              </p>
-              <p>
-                When you receive a business card, you open up Cardr and snap a
-                picture of it. Cardr uses Google CV to analyze the card and
-                retrieve all essential information from it such as phone numbers,
-                email addresses, and names. After it has gathered all of the
-                information it can from the card, it creates a virtual business
-                card that stores all of that information.
-              </p>
-              <p>
-                Cardr also helps you organize your cards by linking them to
-                specific events and lets you search for cards based on those
-                events. Another way to query info is to use our companion Alexa
-                skill, which you can query for either the phone number or email
-                address of an individual, from their name or company.
-              </p>
-            </div>
-            <div class="modal-footer">
-              <a class="text-muted" target="_blank" href="https://devpost.com/software/cardr">Check it out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="terrapinnavModal" tabindex="-1" role="dialog" aria-labelledby="terrapinnavLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <p class="modal-title" id="myModalLabel">Terrapin Nav</p>
-            </div>
-            <div class="modal-body">
-              <img class="modal-image img-fluid" src="images/terrapinnav2.jpg" alt="Terrapin Nav Image">
-              <p>
-                As my internship was winding down, the summer before my freshman
-                year, I had some free time to learn something on my own. I took
-                this time, to teach myself how to develop Amazon Alexa Skills.
-              </p>
-              <p>
-                Terrapin Nav allows you to ask how long it would take to walk
-                between any two buildings at UMD's campus. I thought this would
-                be very helpful for the beginning of the year as students would
-                not know what would be the optimal time to leave for class.
-                A quick shout to Terrapin Nav would return exactly how long the
-                walk would take.
-              </p>
-              <p>
-                The skill works by using <a class="text-muted" target="_blank"
-                href="http://umd.io/">UMD's student run api</a>. This allowed
-                me to get every building's exact latitude and longitude. From
-                there, I fed the two sets of coordinates into Google's
-                Geomatrix API, which spit it out navigation information between
-                those two points, which I returned back to the user.
-              </p>
-            </div>
-            <div class="modal-footer">
-              <a class="text-muted" target="_blank" href="https://www.amazon.com/Sharvil-Parekh-Terrapin-Nav/dp/B01KM81OLI">Check it out</a>
-              <a class="text-muted" style="float: right;"  target="_blank" href="https://github.com/SharvilP/Amazon-Alexa-Skills/blob/master/TerpNav/main.py">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="ezpillModal" tabindex="-1" role="dialog" aria-labelledby="ezpillLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <p class="modal-title" id="myModalLabel">EzPill</p>
-            </div>
-            <div class="modal-body">
-              <img class="modal-image img-fluid" src="images/ezpill2.jpg" alt="EzPill Image">
-              <p>
-                My first season of Major League Hacking hackathons was a blast. 
-                I started with my first hackathon in November 2015 with HackRPI.
-                From there, it's been a joy ride from exploring new campuses to
-                meeting some really cool people. At the end of the 2016 season, 
-                my friend <a class="text-highlighted" target="_blank" href="http://shahvineet98.github.io/">
-                Vineet Shah</a> and I were invited to the season finale, MLH Prime.
-              </p>
-              <p>
-                MLH Prime is a finale hackathon that is full of winners from 
-                that season. For Prime, we built EzPill. EzPill is a smart pill 
-                dispenser whose goal is to make managing medicine a breeze.
-              </p>
-              <p>
-                When you get your prescription, you would empty your pills into 
-                one of the two pill drums. Then, you would use our Android app to 
-                scan the label on your prescription which would load all of your 
-                prescription info into a calendar in our app. Next, you would be 
-                prompted to select a time at which you want to EzPill to dispense
-                your pills. When it came time to take your pills, it would dispense
-                the correct dosage and shoot you a text message you to remind
-                you to take your medicine.
-              </p>
-              <p>
-                We keep track of how many pills were left through the companion 
-                app and a web app that stored info about all of your prescriptions
-                that you could glance at if you were out shopping and didn't know
-                if you needed a refill. To build EzPill, we utilized a lot of 
-                materials we found at Prime. We used cardboard, 3D printed parts,
-                PVC, and servos for the physical device. The device was powered 
-                by a raspberry pi which synced with the web app and android app 
-                using Twilio's Sync platform. 
-              </p>
-            </div>
-            <div class="modal-footer">
-              <a class="text-muted" target="_blank" href="https://devpost.com/software/ezpill">Check it out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="fireberrypiModal" tabindex="-1" role="dialog" aria-labelledby="fireberrypiLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <p class="modal-title" id="myModalLabel">Fireberry Pi</p>
-            </div>
-            <div class="modal-body">
-              <img class="modal-image img-fluid" src="images/fireberrypi2.jpg" alt="Fireberry Pi Image">
-              <p>
-                At Bitcamp 2016, my team and I created Fireberry Pi - A smart 
-                smoke and gas detector. The idea spawned from the statistic that
-                over 500 deaths occur from gas leaks in homes every year and a
-                time when a smoke detector went off in my home, but no one was 
-                there to respond. 
-              </p>
-              <p>
-                Fireberry Pi fixes this issue by alerting all family members of 
-                smoke or gas leak through a text message or alert in our companion
-                Android app. You would also receive a picture of the room with 
-                the text message so you can evaluate the situation on your own.
-              </p>
-              <p>
-                The project was built with a Raspberry Pi 3 and an Arduino Uno. 
-                The Uno was used as a micro controller which managed the input 
-                from our gas/smoke sensor. The Rasperry Pi is what connects all 
-                of our hardware to the web and Android app.
-              </p>
-            </div>
-            <div class="modal-footer">
-              <a class="text-muted" target="_blank" href="https://devpost.com/software/fireberry-pi">Check it out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="lotsofholesModal" tabindex="-1" role="dialog" aria-labelledby="lotsofholesLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <p class="modal-title" id="myModalLabel">Lots of Holes</p>
-            </div>
-            <div class="modal-body">
-              <img class="modal-image img-fluid" src="images/lotsofholes2.jpg" alt="Lots of Holes Image">
-              <p>
-                On the way to HackUMBC 2016, my team and I went over a lot of 
-                potholes. We were annoyed but didn't think much of them. Once
-                we got to the hackathon however, we decided to look into the 
-                process of reporting potholes. We found out that in order for 
-                the county to fix potholes, the public had to call in and report 
-                them. We thought this was too much effort so we came up with 
-                Lots of Holes.
-              </p>
-              <p>
-                Lots of holes is an Android app that you let run in the background
-                while you drive. Once the app detects you go over a pothole 
-                (Measurements from the accelerometer are monitored), a GPS flare
-                is emitted to a Firebase DB. The DB then maps to a google maps 
-                layer that can be shared with the county.
-              </p>
-              <p>
-                The app works through crowdsourcing as the more people that 
-                report a pothole, the higher priority the pothole gets assigned.
-                This is also used to help remove anomalies. 
-              </p>
-            </div>
-            <div class="modal-footer">
-              <a class="text-muted" target="_blank" href="https://devpost.com/software/lots-of-holes">Check it out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="terplaundryModal" tabindex="-1" role="dialog" aria-labelledby="terplaundryLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <p class="modal-title" id="myModalLabel">Terp Laundry</p>
-            </div>
-            <div class="modal-body">
-              <img class="modal-image img-fluid" src="images/terplaundry2.jpg" alt="Terp Laundry Image">
-              <p>
-                Terp Laundry is an Alexa skill that allows UMD students to check
-                the status of washers and dryers in their dorm. I came up with the
-                idea when a friend of mine complained that they had gone downstairs
-                to the laundry room with their clothes, only to come back up after
-                seeing that all the washers were currently in use.
-              </p>
-              <p>
-                The skill works with any dorm at UMD, even with dorms that have
-                multiple laundry rooms. It currently uses Selenium running
-                PhantomJS as a headless browser to authenticate with UMD
-                and scrape the laundry room stats from their website. I am
-                currently talking with UMD to get access directly to the API
-                that provides information about the Laundry Machines on campus. 
-              </p>
-            </div>
-            <div class="modal-footer">
-              <a class="text-muted" target="_blank" href="https://www.amazon.com/dp/B074JK6M8Y">Check it out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="galileoModal" tabindex="-1" role="dialog" aria-labelledby="galileoLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <p class="modal-title" id="myModalLabel">Galileo</p>
-            </div>
-            <div class="modal-body">
-              <img class="modal-image img-fluid" src="images/galileo2.jpg" alt="Galileo Image">
-              <p>
-                Daemon Dash 2016 my team and I developed Galileo. Galileo is a
-                schedule builder aimed at replacing Venus, our very old and
-                clunky schedule generator, provided by UMD. Venus allows for
-                no customization, preferences, or requests and spits out randomly
-                generated permutations of the classes you want to sign up for.
-              </p>
-              <p>
-                We wanted to make the schedule generator smarter and cater more
-                towards the students needs so we wrote our own version that includes
-                filters and preferences. For example, students would be able to specify
-                their dorms and get back a schedule that would be the most optimal in
-                terms of walking.
-              </p>
-            </div>
-            <div class="modal-footer">
-              <a class="text-muted" target="_blank" href="https://hackstreetboys-galileo.herokuapp.com/">Check it out</a>
-              <a class="text-muted" style="float: right;"  target="_blank" href="https://github.com/rachitag22/galileo">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+   </body>
+   <script>
+      $( "#terp" ).click(function() {
+        $("#profileImg").attr('src', 'public/college.jpg');
+      });
+      $( "#name" ).click(function() {
+        $("#profileImg").attr('src', 'public/profile.jpg');
+      });
+      $( ".green.home" ).click(function() {
+        $("#profileImg").attr('src', 'public/summer_2019.jpg');
+      });
+      $( ".orange.amazon" ).click(function() {
+        $("#profileImg").attr('src', 'public/summer_2018.jpg');
+      });
+   </script>
+</html>
