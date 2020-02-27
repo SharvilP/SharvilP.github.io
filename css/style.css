@@ -8,9 +8,8 @@
         display: none !important;
     }
 }
-
 body {
-  background-color: #DADADA;
+  background-color: #FFF7EF;
 }
 body > .grid {
   height: 100%;
