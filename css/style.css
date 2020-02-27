@@ -15,6 +15,9 @@ body {
 body > .grid {
   height: 100%;
 }
+#school {
+  display: inline-flex;
+}
 .column {
   max-width: 450px;
 }
