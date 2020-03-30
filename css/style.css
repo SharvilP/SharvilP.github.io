@@ -7,6 +7,7 @@
     [class*="or lower hidden"] {
         display: none !important;
     }
+
 }
 body {
   background-color: #FFF7EF;
@@ -40,4 +41,7 @@ body > .grid {
 }
 .startupshell {
   color: #BF4A3C
+}
+.cards {
+  padding-top: 20px;
 }
